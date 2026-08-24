@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Para ti</title>
+<meta name="theme-color" content="#14110E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="is-locked">
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><span class="progress__bar"></span></div>
+
+  <!-- ══════════ BIENVENIDA ══════════ -->
+  <div class="welcome" id="welcome">
+    <div class="welcome__halo" aria-hidden="true"></div>
+    <div class="welcome__inner">
+      <p class="eyebrow eyebrow--light">Para ti</p>
+      <h1 class="welcome__title">Nombre<br /><em>&amp; Nombre</em></h1>
+      <span class="hairline" aria-hidden="true"></span>
+      <p class="welcome__lead">Nunca te lo digo con calma. Hoy sí.</p>
+    </div>
+    <button class="btn" id="start" type="button">Abrir la carta</button>
+    <p class="welcome__hint">Con sonido</p>
+  </div>
+
+  <!-- ══════════ CONTROL DE MÚSICA ══════════ -->
+  <div class="music" id="music" hidden>
+    <button class="music__btn" id="musicBtn" type="button" aria-label="Silenciar música">
+      <span class="eq" id="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="music__label" id="musicLabel">Música</span>
+    </button>
+  </div>
+
+  <main>
+
+    <!-- 01 · Carta -->
+    <section class="section section--letter" data-screen="01">
+      <p class="eyebrow reveal"><span class="rule"></span>Gracias</p>
+      <h2 class="lede reveal">Hay cosas que haces <em>sin que nadie te lo pida</em>, y sostienen todo lo demás.</h2>
+      <p class="body reveal">Primer párrafo. Aquí va lo que quieras agradecer en concreto: no la idea general, sino las cosas pequeñas y reales que hace por ti.</p>
+      <p class="body reveal">Segundo párrafo. Un par de líneas más, y cierras. Corto se lee entero; largo se abandona a la mitad.</p>
+    </section>
+
+    <!-- 02 · Foto -->
+    <section class="section section--photo" data-screen="02">
+      <figure class="photo reveal reveal--soft">
+        <img src="assets/img/foto01.jpg" alt="" loading="lazy" />
+        <figcaption>Pie de foto · lugar, año</figcaption>
+      </figure>
+    </section>
+
+    <!-- 03 · Frase -->
+    <section class="section section--quote" data-screen="03">
+      <div class="quote">
+        <p class="eyebrow eyebrow--light reveal">Una frase</p>
+        <blockquote class="reveal">&ldquo;Gracias por lo que haces cuando nadie está mirando.&rdquo;</blockquote>
+        <p class="eyebrow eyebrow--light reveal">— Autor o fecha</p>
+      </div>
+    </section>
+
+    <!-- 04 · Cierre -->
+    <section class="section section--end" data-screen="04">
+      <span class="hairline hairline--dark reveal" aria-hidden="true"></span>
+      <p class="end__line reveal">Gracias. Por todo, y por lo que no se ve.</p>
+      <p class="eyebrow reveal">Firma · fecha</p>
+    </section>
+
+  </main>
+
+  <audio id="audio" src="assets/audio/cancion.mp3" loop preload="none"></audio>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
