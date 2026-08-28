@@ -216,6 +216,17 @@ main { display: flex; flex-direction: column; align-items: center; width: 100%; 
   font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: #948B80;
 }
 
+/* Marcador para fotos que se agregarán más adelante */
+.photo__placeholder {
+  display: flex; align-items: center; justify-content: center;
+  width: 100%; aspect-ratio: 4 / 5;
+  border: 1px dashed rgba(33, 29, 24, .22); border-radius: 2px;
+  background: rgba(33, 29, 24, .02);
+}
+.photo__placeholder span {
+  font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: var(--faint);
+}
+
 /* ── Apariciones al hacer scroll ────────────────────────── */
 .reveal {
   opacity: 0; transform: translateY(16px);
